@@ -1,6 +1,6 @@
 # Group algebras that are domains but embed in no division ring
 
-Nidhal Mghirbi and Seth Douglas. Version 1.0.0, November 2026.
+Nidhal Mghirbi and Seth Douglas. Version 1.0.0, November 2026. DOI for all versions: [10.5281/zenodo.24202768](https://doi.org/10.5281/zenodo.24202768); version 1.0.0: [10.5281/zenodo.24202769](https://doi.org/10.5281/zenodo.24202769).
 
 **This is a preprint. It has not been peer reviewed.**
 
