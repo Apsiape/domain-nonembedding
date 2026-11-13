@@ -1,0 +1,184 @@
+\section{Introduction}
+
+Every commutative domain embeds in a field. For noncommutative domains,
+division-ring embeddability is an additional condition. We distinguish
+these properties for group algebras of word-hyperbolic groups.
+
+Recall that a group \(H\) has \emph{unique product} if, for all nonempty
+finite subsets \(P,R\subset H\), some element of \(PR\) has exactly one
+expression \(xy\), with \(x\in P\) and \(y\in R\). Its coefficient in a
+product of two nonzero elements of \(K[H]\) cannot cancel. Thus unique
+product makes \(K[H]\) a domain over every field \(K\). Our examples
+satisfy the stronger condition of diffuseness, recalled in
+Section~\ref{sec:diffuse}.
+
+\begin{maintheorem}[Hyperbolic examples]\label{thm:main}
+For every prime \(p\), there is a finitely presented, torsion-free,
+word-hyperbolic diffuse group \(\Gamma_p\) such that
+\begin{enumerate}
+\item \(K[\Gamma_p]\) is a domain for every field \(K\);
+\item if \(\operatorname{char}K=p\), there is no injective ring
+homomorphism from \(K[\Gamma_p]\) to any division ring.
+\end{enumerate}
+\end{maintheorem}
+
+Kourovka Problem~1.5, recorded by L.~A.~Bokut', asks whether there is a
+group whose group ring has no zero divisors and is not embeddable into
+a skew field~\cite{Kourovka}. The problem leaves the coefficient ring
+unspecified; Bokut' poses the embedding question for group algebras over
+fields~\cite[p.~122]{Bokut87}. Theorem~\ref{thm:main} answers it for
+group algebras over fields of every positive characteristic, now with
+word-hyperbolic groups. The integral version, for \(\Z[H]\), and the
+version over fields of characteristic zero remain open. Mal'cev's
+problem, Kourovka Problem~1.6, asks about division embeddings for
+left-orderable groups and remains open as well.
+
+\subsection*{Two constructions from one rank ceiling}
+
+Fix a prime \(p\) and a power \(Q=p^a>320000\cdot2060^{309}\).
+We construct a diffuse, torsion-free word-hyperbolic group \(G_p\)
+carrying matrices \(Y_1,\ldots,Y_N\) of order \(r\), with group elements
+as entries. Interpolation over \(\F_Q\) and the triangle relations give
+\begin{equation}\label{eq:intro-budget}
+ \sum_{i=1}^N\rk_D\phi(Y_i)<\frac{Nr}{4}
+\end{equation}
+for every unital homomorphism \(\phi:\F_p[G_p]\to D\) to a division
+ring. The division ring need not contain \(\F_Q\): its regular
+representation over \(\F_p\) supplies the required scalar matrices.
+After diagonal normalization, \(Y_i\) is equivalent to
+\(\diag(1,M_i)\), where
+\[
+ M_i=(e_{i,uv}-1)_{1\le u,v<r}
+\]
+and the \(e_{i,uv}\) freely generate a line subgroup \(F_i\le G_p\).
+
+For Theorem~\ref{thm:main}, put \(n=r-1\) and take a free group
+\(A=*_{i=1}^N A_i\), where \(A_i\) has basis
+\(a_{i,uv}\), \(1\le u,v\le n\). For every permutation \(\pi\) of the
+\(n^2\) entry positions, use a copy \(G_p^\pi\) and glue each of its
+\(F_i\)'s to \(A_i\) by \(e_{i,uv}\mapsto a_{i,\pi(u,v)}\).
+All vertex groups embed. In a faithful division-ring representation,
+the \(a_{i,uv}-1\) are distinct and nonzero. Averaging the ranks of
+all their placements gives some copy with total \(Y_i\)-rank at
+least \(Nr/2\), contradicting~\eqref{eq:intro-budget}.
+
+Convex lifts of the line graphs prove quasiconvexity and joint
+malnormality. Every three-edge segment in the Bass--Serre tree has
+trivial stabilizer, even though different edges at the central vertex
+share the image \(A_i\). Dahmani's acylindrical combination theorem
+then gives hyperbolicity. To obtain diffuseness, we prove that every
+\(F_i\) is concentrated in \(G_p\). This requires a separate cone
+attachment, a systole bound of \(2\), a sharper metric diffuseness
+lemma, and a puncture lemma identifying the kernel as a free product.
+Bowditch's graph-of-groups theorem then applies.
+
+The shear construction remains useful for its different
+forcing argument and its retraction.
+\begin{maintheorem}[Retractive shear examples]\label{thm:shear}
+For every prime \(p\), the base \(G_p\) is a retract of a finitely
+presented diffuse group \(\Lambda_p\) such that \(K[\Lambda_p]\) is a
+domain for every field \(K\) and embeds in no division ring whenever
+\(\operatorname{char}K=p\). The kernel of the retraction is
+\[
+ *_{i,\,gF_i\in G_p/F_i}g\Z^2g^{-1}.
+\]
+It is bi-orderable, and \(\Lambda_p\) is left-orderable if and only if
+\(G_p\) is left-orderable.
+\end{maintheorem}
+
+Here one attaches \(\Z^2\rtimes F_i\), with commuting generators
+\(s_i,\gamma_i\), and relations
+\[
+ [s_i,e_{i,uv}]=1,\qquad
+ \gamma_i e_{i,uv}\gamma_i^{-1}=s_i^{\delta_{uv}}e_{i,uv}.
+\]
+In the division closure of a faithful image of an attachment,
+\(s_i\) is central with distinct powers. Writing
+\(\Delta=\diag(e_{i,11},\ldots,e_{i,nn})\), the relations give
+\begin{equation}\label{eq:intro-conjugacy}
+ (\gamma_i^kI)M_i(\gamma_i^{-k}I)=\Delta(s_i^kI+C)
+\end{equation}
+for a fixed matrix \(C\). Singularity would give arbitrarily many
+distinct central eigenvalues of \(C\), impossible in finite dimension.
+Thus every \(Y_i\) has full rank, again contradicting the ceiling.
+This algebraic argument has the following general form.
+
+\begin{maintheorem}[General attachment principle]\label{thm:principle}
+Let \(K\) be a field and let \(G\) be a unique-product group. Suppose
+there are finitely many matrices \(Y_i\) over \(K[G]\), of orders
+\(r_i\ge2\), with the following properties:
+\begin{enumerate}
+\item each \(Y_i\) becomes
+\(\left(\begin{smallmatrix}1&\one^{\mathsf T}\\
+\one&(e_{i,uv})\end{smallmatrix}\right)\)
+under invertible row and column operations over \(K[G]\), where its
+interior entries freely generate a subgroup \(F_i\le G\);
+\item for every division ring \(D\) and injective homomorphism
+\(\phi:K[G]\to D\), we have \(\sum_i\rk_D\phi(Y_i)<\sum_i r_i\).
+\end{enumerate}
+Then \(G\) is a retract of a unique-product group \(\Gamma\) for which
+\(K[\Gamma]\) embeds in no division ring. If \(G\) is diffuse, so is
+\(\Gamma\). If \(G\) is finitely presented, so is \(\Gamma\).
+\end{maintheorem}
+
+No independence condition on a division-ring embedding is assumed in
+either construction. Compared with Theorem~\ref{thm:shear},
+Theorem~\ref{thm:main} replaces the shear attachments, which contain
+\(\Z^2\), by permutation gluing, and so yields a word-hyperbolic
+example. The concentration proof for the line subgroups is what
+permits that gluing while retaining diffuseness. Theorem~\ref{thm:shear}
+keeps a retraction onto the base, and with it the relation to the
+orderability of the base.
+
+\subsection*{Relation to earlier work}
+
+The marked affine lines~\cite[Lemma~2.2]{OAI252}, the triangular
+relations and their link analysis~\cite[Lemma~2.3]{OAI252}, and the
+interpolation identity~\cite[(2.13)--(2.14)]{OAI252} come from OpenAI's
+construction of a torsion-free hyperbolic group that is not residually
+finite. Douglas--Mghirbi~\cite[Theorems~1.2 and~1.4, Proposition~6.4
+and Corollary~6.5]{DM} used this identity to obstruct approximate
+permutation models and Linnell division rings, and separated the
+vertices of the triangle complex to expose free subgroups generated by
+the normalized matrix entries. We give the incidence construction,
+the split complex, and the rank identity in full.
+
+For both constructions we increase the incidence girth and change the
+triangle metric to make the split group diffuse. The regular
+representation of \(\F_Q\) over \(\F_p\) makes the rank argument work
+for every prime \(p\). The shear argument forces full rank by central
+eigenvalues; the hyperbolic argument instead forces a sufficiently
+large average rank over all basis permutations.
+
+Bowditch introduced diffuse groups and proved their unique-product,
+extension and graph-of-groups properties~\cite{Bowditch}.
+Our metric arguments use the strong four-point inequality of
+Nica--\v Spakula~\cite[Definition~4.1 and Theorem~5.1]{NicaSpakula}.
+For hyperbolic combination we use
+Dahmani~\cite[Theorem~0.1(1) and Proposition~1.11]{Dahmani}; see also
+Bestvina--Feighn~\cite{BF,BFAdd} and Kapovich~\cite{Kapovich}.
+The broader division-embedding problem and its relation to Linnell
+embeddings are discussed by Fisher--S\'anchez-Peralta~\cite{FSP}.
+In 2024 Fisher and Klinge noted that no torsion-free group was known
+whose group algebra fails to embed in a division ring~\cite[Section~3.2]{FK}.
+The torsion-free examples found since then have group algebras with
+zero divisors~\cite{DMzd,Ivanov,OAI196} or group algebras that are not
+directly finite~\cite{OAI197}. Those results do not address the domain
+case treated here.
+
+\subsection*{Conventions and proof order}
+
+Rings and homomorphisms are unital. A domain is a nonzero ring without
+zero divisors. Matrix rank over a division ring is the dimension of the
+right column space; row and column elimination have their usual
+noncommutative meaning. A faithful representation of a group algebra
+means an injective ring homomorphism.
+
+Section~\ref{sec:rank} proves Theorem~\ref{thm:principle}.
+Section~\ref{sec:lines} constructs the incidence data and proves the
+interpolation identity. Section~\ref{sec:geometry} constructs \(G_p\),
+its line subgroups and the rank ceiling, and proves diffuseness.
+Section~\ref{sec:hyperbolic} proves Theorem~\ref{thm:main}, including
+the concentration argument. Section~\ref{sec:finish} proves
+Theorem~\ref{thm:shear}, specifies its presentation, and discusses the
+remaining embedding and orderability questions.

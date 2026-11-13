@@ -1,0 +1,250 @@
+\section{Marked lines and the rank inequality}\label{sec:lines}
+
+The finite-field construction supplies two features at once: a sparse
+incidence pattern with large girth, and many matrices whose total rank
+is bounded by a much smaller sum of local ranks. The metric in the next
+section will use the girth. The rank argument uses only the marked
+points and the triangular relations.
+Lemma~\ref{lem:incidence} adapts \cite[Lemma~2.2]{OAI252}, which is
+stated in dimension \(20\) with girth greater than \(12\), to dimension
+\(d=103\) and girth greater than \(g=100\).
+
+\subsection{Incidence data with explicit parameters}
+
+Fix
+\begin{equation}\label{eq:constants}
+ g=100,\qquad d=103,\qquad
+ c=(20d)^{-d}=2060^{-103},\qquad r=100c^{-1}.
+\end{equation}
+The integer \(g\) is the required girth bound and \(d\) is the affine
+dimension. Let \(p\) be a prime, and let \(Q=p^a\) be any power of
+\(p\) greater than
+\begin{equation}\label{eq:qbound}
+ Q_0=320000\cdot2060^{309}.
+\end{equation}
+This is the largest of
+\[
+ 20d,\qquad 32r^2/c,\qquad 256r/c,\qquad 16rg^2.
+\]
+Fix a monic irreducible polynomial \(\pi\in\F_p[X]\) of degree \(a\),
+and put \(\F_Q=\F_p[X]/(\pi)\). Each element of \(\F_Q\) is uniquely
+\(c_0+c_1X+\cdots+c_{a-1}X^{a-1}\) with residues
+\(c_j\in\{0,\ldots,p-1\}\); give it the number
+\(c_0+c_1p+\cdots+c_{a-1}p^{a-1}\in\{0,\ldots,Q-1\}\).
+This numbering orders \(\F_Q\); it plays no role in its arithmetic.
+Put \(P=\F_Q^d\), \(m=Q^d\), and let \(S\subset\F_Q\) consist of the
+elements numbered
+\[
+ 0,1,\ldots,\lfloor Q/(10d)\rfloor-1.
+\]
+Only \(|S|=\lfloor Q/(10d)\rfloor\) matters below.
+An affine line \(\ell_i\) has a distinguished mark \(a_i\in S^d\).
+Its \emph{punctured line} is \(\ell_i^\circ=\ell_i\setminus\{a_i\}\).
+Marks, and hence labels \(i\), will be distinct. Different labels
+are allowed initially to choose the same geometric line.
+
+\begin{lemma}\label{lem:incidence}
+There are a nonempty finite label set \(I\), marked affine lines
+\((\ell_i,a_i)_{i\in I}\), and a set \(\cE\subset P\) such that,
+with \(N=|I|\),
+\begin{enumerate}
+\item the bipartite incidence graph on \(P\sqcup I\), with
+\(z\sim i\) when \(z\in\ell_i^\circ\), has no cycle of length at most \(g\);
+\item every \(z\notin\cE\) belongs to at least \(4r^2\) punctured lines;
+\item \(N\ge cm/2\) and \(|\cE|\le m/(2r)\).
+\end{enumerate}
+Consequently,
+\begin{equation}\label{eq:budget}
+ 2m+r|\cE|\le\frac{5m}{2}
+ <\frac{25m}{2}\le\frac{Nr}{4}.
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+Initially use all \(n_0=|S|^d\) points of \(S^d\) as marks. At each
+mark choose a direction independently and uniformly from the
+\[
+ J=\frac{Q^d-1}{Q-1}
+\]
+projective directions. Since \(Q>20d\), we have
+\(|S|\ge Q/(20d)\), hence \(n_0\ge cm\).
+Also \(Q^{d-1}\le J\le2Q^{d-1}\).
+
+For a fixed \(z\), each mark other than \(z\) produces an incidence
+with probability \(1/J\); the mark at \(z\), if present, produces none.
+Thus the degree is binomial, with mean \(\mu_z\) and variance at most
+\(\mu_z\). The bounds on \(Q\) imply \(cm>2\), so
+\[
+ \mu_z\ge\frac{n_0-1}{2Q^{d-1}}
+ \ge\frac{cQ}{4}>8r^2.
+\]
+Chebyshev's inequality gives
+\[
+ \Pr\{\deg(z)<4r^2\}\le\frac{4}{\mu_z}
+ \le\frac{16}{cQ}.
+\]
+The expected number of points of degree less than \(4r^2\) is therefore
+at most \(16m/(cQ)\). By Markov's inequality, the probability that
+there are more than \(m/(4r)\) such points is at most
+\[
+ \frac{64r}{cQ}<\frac14.
+\]
+
+Next count simple cycles of length \(2s\), where \(2\le s\le g/2\).
+There are at most \(m^s\) ordered choices of their point vertices.
+Consecutive points determine a geometric line, which has at most \(Q\)
+possible marks. If the \(s\) chosen marks are distinct, the required
+directions occur with probability \(J^{-s}\).
+Ignoring distinctness restrictions and forbidden punctured endpoints
+only increases the count. Thus the expected number of such cycles is
+at most
+\[
+ m^s Q^sJ^{-s}\le Q^{2s}.
+\]
+The expected total number of cycles of length at most \(g\) is at most
+\(gQ^g\). With probability at least \(3/4\), their number is at most
+\(4gQ^g\). Both desired bounds therefore hold simultaneously with
+positive probability.
+
+Choose such an outcome. Delete every label on a cycle of length at
+most \(g\). At most \(4g^2Q^g\) labels are deleted. Let \(\cE\)
+contain the old low-degree points and all points on deleted lines.
+Deletion creates no new cycle, and changes no degree outside \(\cE\).
+Because \(d=g+3\),
+\[
+ \frac{\#\{\text{deleted labels}\}}m\le\frac{4g^2}{Q^3},
+ \qquad
+ \frac{\#\{\text{points on deleted lines}\}}m
+ \le\frac{4g^2}{Q^2}.
+\]
+The inequality \(Q>16rg^2\), together with \(r=100/c\), makes the first
+quantity at most \(c/2\) and the second at most \(1/(4r)\).
+It follows that \(N\ge cm/2\) and
+\(|\cE|\le m/(4r)+m/(4r)\). Finally
+\[
+ Nr/4\ge cmr/8=25m/2,
+\]
+which proves~\eqref{eq:budget}.
+\end{proof}
+
+The probabilistic proof makes the data finite and deterministic as
+follows. Normalize each nonzero direction vector by making its first
+nonzero coordinate \(1\). Order these vectors and the marks
+lexicographically, comparing coordinates by their numbers. Choose the first direction
+tuple meeting the two bounds before deletion, then delete exactly the
+labels described in the proof. Lemma~\ref{lem:incidence} ensures that
+this finite search terminates.
+
+\subsection{Two blocks at each regular point}
+
+Write
+\[
+ I(z)=\{i\in I:z\in\ell_i^\circ\}.
+\]
+For each regular point \(z\notin\cE\), partition \(I(z)\) into two
+blocks \(I_b\), each with
+\begin{equation}\label{eq:block-shape}
+ |I_b|=s_bt_b,\qquad s_b,t_b\ge r.
+\end{equation}
+Here is a definite choice. If \(n=|I(z)|\ge4r^2\), put
+\[
+ b_n=r+(n\bmod r),\qquad
+ a_n=\frac{n-(r+1)b_n}{r}.
+\]
+Then \(r\le b_n\le2r-1\), the number \(a_n\) is integral, and
+\[
+ a_n\ge\frac{2r^2-r+1}{r}\ge r.
+\]
+Use a first block with \((s_b,t_b)=(r,a_n)\) and a second with
+\((s_b,t_b)=(r+1,b_n)\).
+Order the labels and use the initial segment for the first block.
+There are no blocks at points of \(\cE\).
+
+Let \(\cB\) be the set of blocks, and let \(z_b\) be the point at
+which block \(b\) is based. Fix the lexicographic bijection
+\begin{equation}\label{eq:coordinates}
+ I_b\longrightarrow\Z/s_b\Z\times\Z/t_b\Z,\qquad
+ i\longmapsto(\alpha_b(i),\beta_b(i)).
+\end{equation}
+The block--line graph on \(\cB\sqcup I\), with \(b\sim i\) when
+\(i\in I_b\), maps to the incidence graph by \(b\mapsto z_b\).
+This map is locally injective: at a block its incident labels are
+distinct, and at a label there is at most one incident block over each
+point. Thus its girth is also greater than \(g\).
+
+\subsection{The interpolation identity}
+
+For each surviving mark \(a_i=(a_{i,1},\ldots,a_{i,d})\), define the
+product Lagrange polynomial
+\[
+ f_i(X_1,\ldots,X_d)=
+ \prod_{\nu=1}^{d}
+ \prod_{\substack{\sigma\in S\\\sigma\ne a_{i,\nu}}}
+ \frac{X_\nu-\sigma}{a_{i,\nu}-\sigma}\in\F_Q[X_1,\ldots,X_d].
+\]
+It is \(1\) at \(a_i\) and \(0\) at all other grid points.
+Let \(f=(f_i)_{i\in I}\) be the column of these polynomials.
+The total degree of every entry of \(ff^{\mathsf T}\) is at most
+\[
+ 2d(|S|-1)<Q-1.
+\]
+
+A polynomial in one variable of degree less than \(Q-1\) sums to zero
+over \(\F_Q\). For the constant polynomial this is \(Q=0\) in \(\F_Q\).
+For \(T^j\), \(1\le j<Q-1\), choose
+\(\omega\in\F_Q^\times\) with \(\omega^j\ne1\), which exists because
+\(T^j-1\) has at most \(j\) roots; multiplication by \(\omega\)
+permutes the inputs and forces the sum to vanish.
+Parametrizing an affine line therefore gives
+\begin{equation}\label{eq:line-certificate}
+ \sum_{z\in\ell_i^\circ}f(z)f(z)^{\mathsf T}=-E_{ii}.
+\end{equation}
+
+\begin{lemma}[Rank certificate]\label{lem:certificate}
+Let \(D\) be a division ring of characteristic \(p\), and let \(Y_i\)
+be arbitrary \(r\times r\) matrices over \(D\). Put
+\(Z(z)=\sum_{i\in I(z)}Y_i\). Then
+\begin{equation}\label{eq:certificate-rank}
+ \sum_{i\in I}\rk_D Y_i\le\sum_{z\in P}\rk_D Z(z).
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+The division ring \(D\) need not contain \(\F_Q\), so we adjoin
+\(\F_Q\) inside a matrix ring. Let \(\lambda:\F_Q\to M_a(\F_p)\) be
+the regular representation: \(\lambda(c)\) is the matrix of
+multiplication by \(c\) in the basis \(1,X,\ldots,X^{a-1}\). It is an
+injective ring homomorphism. The prime field \(\F_p\) is central in
+\(D\), so in \(M_a(D)\) every \(\lambda(c)\) commutes with every
+scalar matrix \(yI_a\), \(y\in D\). Let \(R\subseteq M_a(D)\) be the
+subring generated by \(\lambda(\F_Q)\) and \(DI_a\). Then
+\(\lambda(\F_Q)\) is a central subfield of \(R\), and
+\(y\mapsto yI_a\) embeds \(D\) in \(R\). We regard \(R\) as an
+\(\F_Q\)-algebra through \(\lambda\), and matrices over \(D\) as
+matrices over \(R\).
+
+Over \(R\) we have
+\begin{equation}\label{eq:certificate}
+ -\bigoplus_{i\in I}Y_i
+ =\sum_{z\in P}(f(z)\otimes I_r)\,Z(z)\,
+                 (f(z)^{\mathsf T}\otimes I_r).
+\end{equation}
+Indeed, expand the right side, exchange the finite sums, and
+apply~\eqref{eq:line-certificate} to each label \(i\); the scalars
+from \(\F_Q\) are central in \(R\).
+This gives \(-\sum_i E_{ii}\otimes Y_i\).
+
+Now read an \(n\times n'\) matrix over \(R\) as an \(na\times n'a\)
+matrix over \(D\) made of \(a\times a\) blocks; this respects sums
+and products. A matrix \(Y\) over \(D\) becomes \(Y\otimes I_a\),
+which a permutation of rows and columns turns into
+\(I_a\otimes Y\). Its rank over \(D\) is therefore \(a\rk_D Y\).
+Hence the left side of~\eqref{eq:certificate} has rank
+\(a\sum_i\rk_D Y_i\), whereas the summand at \(z\) on the right has
+rank at most \(a\rk_D Z(z)\). Subadditivity of rank, and division
+by \(a\), prove~\eqref{eq:certificate-rank}.
+\end{proof}
+
+The identity is purely algebraic. The group in the next section
+arranges that each regular \(Z(z)\) is a sum of two matrices of rank
+at most one.
