@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "native_lean_launches": 75,
+  "serial_start_end_pairs_verified": true,
+  "compiler_threads": 1,
+  "compiler_memory_cap_mib": 5000,
+  "compiler_cap_raised": false,
+  "minimum_windows_available_before_launch": 9789038592,
+  "minimum_wsl_available_before_launch": 15553748992,
+  "minimum_c_free_before_launch": 203682824192,
+  "foreign_process_kills": 0,
+  "workspace_deleted": true
+}

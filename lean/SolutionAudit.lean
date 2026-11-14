@@ -1,0 +1,8 @@
+import Solution
+set_option autoImplicit false
+#check DomainNonembedding.Release.paperData_exists
+#check DomainNonembedding.Release.nonembedding_data
+#check DomainNonembedding.Release.shear_nonembedding_data
+#print axioms DomainNonembedding.Release.paperData_exists
+#print axioms DomainNonembedding.Release.nonembedding_data
+#print axioms DomainNonembedding.Release.shear_nonembedding_data

@@ -1,0 +1,3 @@
+warning: FiniteLean: ignoring missing manifest:
+  /opt/domain-nonembedding-lean/project/deps/finitelean-release/lake-manifest.json
+info: mathlib: running post-update hooks

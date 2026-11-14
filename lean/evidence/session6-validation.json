@@ -1,0 +1,282 @@
+{
+  "complete": true,
+  "release_diff_exact": true,
+  "proposition_bodies_byte_identical": 11,
+  "frozen_history_preserved": true,
+  "helper_types_unchanged": true,
+  "construction_source_closure_verified": 14,
+  "reuse_working_files_and_git_blobs_raw_hash_verified": 79,
+  "development_census": {
+    "owned_lean_files": 31,
+    "unfinished_proof_census": {},
+    "total": 0,
+    "reuse_files_verified": 79,
+    "violations": [],
+    "note": "This is a source audit; it does not substitute for Lean type checking."
+  },
+  "challenge_imports_only_mathlib": true,
+  "challenge_intentional_holes": 3,
+  "challenge_definition_copy_verbatim": true,
+  "tracked_lean_sources_match_test_snapshot": {
+    "commit": "2fec5f6",
+    "files": 93,
+    "comparison": "Git text-file line-ending normalization; frozen/reused file hashes separately checked raw"
+  },
+  "comparator": "PASS",
+  "proof_export": {
+    "bytes": 197288510,
+    "sha256": "4a5a95d170a5aa6314f1f74635e827275a0ca52cda7ba497e8ea8ae6d366681b",
+    "proof_roots": 16
+  },
+  "leanchecker": "PASS",
+  "nanoda": "PASS",
+  "negative_control": "PASS",
+  "clean_clone": {
+    "workspace": "/opt/domain-nonembedding-clean-2026-11-13",
+    "network_scope": "GitHub pinned dependencies and Mathlib cache only",
+    "fresh_workspace": true,
+    "preexisting_build_artifacts": false,
+    "checks": [
+      {
+        "label": "clone",
+        "command": [
+          "git",
+          "clone",
+          "--no-hardlinks",
+          "/opt/domain-nonembedding-lean/project/work/clean-clone.bundle",
+          "/opt/domain-nonembedding-clean-2026-11-13"
+        ],
+        "exit_code": 0,
+        "started_epoch": 1794614351.956827,
+        "finished_epoch": 1794614352.0419095
+      },
+      {
+        "label": "cache-get",
+        "command": [
+          "lake",
+          "exe",
+          "cache",
+          "get"
+        ],
+        "exit_code": 0,
+        "started_epoch": 1794614352.0444882,
+        "finished_epoch": 1794614452.583468
+      },
+      {
+        "label": "build",
+        "command": [
+          "lake",
+          "build"
+        ],
+        "exit_code": 0,
+        "started_epoch": 1794614452.5835426,
+        "finished_epoch": 1794615048.6220226
+      },
+      {
+        "label": "audit",
+        "command": [
+          "lake",
+          "env",
+          "lean",
+          "-j1",
+          "-M5000",
+          "Audit.lean"
+        ],
+        "exit_code": 0,
+        "started_epoch": 1794615048.6221192,
+        "finished_epoch": 1794615128.329357
+      },
+      {
+        "label": "solution",
+        "command": [
+          "lake",
+          "env",
+          "lean",
+          "-j1",
+          "-M5000",
+          "-o",
+          ".lake/build/lib/lean/Solution.olean",
+          "Solution.lean"
+        ],
+        "exit_code": 0,
+        "started_epoch": 1794615128.3294208,
+        "finished_epoch": 1794615141.1619496
+      },
+      {
+        "label": "solution-audit",
+        "command": [
+          "lake",
+          "env",
+          "lean",
+          "-j1",
+          "-M5000",
+          "SolutionAudit.lean"
+        ],
+        "exit_code": 0,
+        "started_epoch": 1794615141.162009,
+        "finished_epoch": 1794615155.0533698
+      },
+      {
+        "label": "source-audit",
+        "command": [
+          "python3",
+          "-I",
+          "scripts/source-audit.py"
+        ],
+        "exit_code": 0,
+        "started_epoch": 1794615155.0534368,
+        "finished_epoch": 1794615155.0871906
+      },
+      {
+        "label": "git-diff",
+        "command": [
+          "git",
+          "diff",
+          "--exit-code"
+        ],
+        "exit_code": 0,
+        "started_epoch": 1794615155.0872436,
+        "finished_epoch": 1794615155.1093755
+      }
+    ],
+    "local_bundle_sha256": "fc1adc0a67b75cae599d8f04d22457570efd48f6a1ef111b526c054a9e776006",
+    "tested_commit": "2fec5f69d999a341f1f8d995389d808a310ba3ec",
+    "status": "PASS",
+    "development_sorry_count": 0,
+    "challenge_intentional_holes": 3,
+    "compiled_sorry_warnings": 0,
+    "full_axiom_audit_declarations": 2792,
+    "solution_axiom_audit_declarations": 3,
+    "manifest_unchanged": true,
+    "source_tree_unchanged": true,
+    "workspace_deleted": true,
+    "log_sha256": {
+      "solution-audit.txt": "70997e955c8b5102a00a24e41a6499bf9901df0dad4ba0f573c0f2a6b1c340d1",
+      "cache-get.txt": "7ac57c59f69acc48f5aed1db424e0819a40cc19392927cf6e59fe942730aab63",
+      "git-diff.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "solution.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "build.txt": "832fc5d3e3a65bf4668e76b53f2ad184e66c6073ecc36070087e06a2febd6dc7",
+      "audit.txt": "d81547448d476f0358580d8f3609817a1a5e86b48975bf2226018ccb28795a9d",
+      "clone.txt": "045c5c84ab21ed432376bf416f0a5cd9fc4eac5127e28802e82e3b02bd3aaa8e",
+      "source-audit.txt": "2a5860c358d1b8bc13328462c9d75923a517658b06eee7b8e1bf31ce49bb2150"
+    }
+  },
+  "full_axiom_audit": {
+    "development_and_imported_reuse_declarations": 2792,
+    "release_wrapper_declarations": 3,
+    "permitted_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "per_module": {
+      "FiniteLean.GroupTheory.OAI.GroupTheory.Hyperbolic.Incidence": 178,
+      "FiniteLean.GroupTheory.OAI.GroupTheory.Hyperbolic.PermutationCycles": 79,
+      "FiniteLean.GroupTheory.OAI.GroupTheory.Hyperbolic.Rectangles": 11,
+      "FiniteLean.GroupTheory.DivisionRing.Sylvester": 86,
+      "FiniteLean.GroupTheory.OAI.GroupTheory.Hyperbolic.Ribbons": 203,
+      "FiniteLean.GroupTheory.OAI.GroupTheory.Hyperbolic.WordPaths": 136,
+      "DomainNonembedding.LineFree": 68,
+      "FiniteLean.GroupTheory.OAI.GroupTheory.Hyperbolic.TriangleFilling": 118,
+      "Main": 11,
+      "DomainNonembedding.ShearNormalForms": 50,
+      "DomainNonembedding.MarkedLines": 29,
+      "FiniteLean.GroupTheory.OAI.GroupTheory.Hyperbolic.Presentation": 173,
+      "FiniteLean.GroupTheory.OAI.GroupTheory.Hyperbolic.Planarity": 53,
+      "DomainNonembedding.LocalRank": 21,
+      "DomainNonembedding.CollapsedLines": 116,
+      "FiniteLean.GroupTheory.OAI.GroupTheory.Hyperbolic.Spheres": 92,
+      "FiniteLean.GroupTheory.OAI.GroupTheory.Hyperbolic.LiftedFilling": 89,
+      "DomainNonembedding.Headline": 32,
+      "DomainNonembedding.PaperData": 172,
+      "FiniteLean.GroupTheory.OAI.GroupTheory.Hyperbolic.Chains": 48,
+      "FiniteLean.GroupTheory.OAI.GroupTheory.Hyperbolic.CyclicAction": 37,
+      "NonSofic.LineFreeWord": 27,
+      "FiniteLean.GroupTheory.DivisionRing.RankD": 52,
+      "FiniteLean.GroupTheory.OAI.GroupTheory.Hyperbolic.MatrixRank": 120,
+      "DomainNonembedding.Permutation": 35,
+      "DomainNonembedding.GraphNormalForms": 72,
+      "FiniteLean.GroupTheory.OAI.GroupTheory.Hyperbolic.FullFilling": 63,
+      "DomainNonembedding.IncidenceBounds": 26,
+      "FiniteLean.GroupTheory.OAI.GroupTheory.Hyperbolic.Words": 108,
+      "DomainNonembedding.DataConstruction": 32,
+      "FiniteLean.GroupTheory.OAI.GroupTheory.Hyperbolic.RePairing": 66,
+      "FiniteLean.GroupTheory.OAI.GroupTheory.Hyperbolic.FullChains": 41,
+      "FiniteLean.GroupTheory.OAI.GroupTheory.Hyperbolic.Links": 54,
+      "DomainNonembedding.Interpolation": 11,
+      "FiniteLean.GroupTheory.OAI.GroupTheory.Hyperbolic.BasedWords": 47,
+      "DomainNonembedding.FiniteFieldData": 5,
+      "DomainNonembedding.PermutationAverage": 48,
+      "FiniteLean.GroupTheory.OAI.GroupTheory.Hyperbolic.Dipoles": 59,
+      "FiniteLean.GroupTheory.OAI.GroupTheory.Hyperbolic.FullGluing": 25,
+      "DomainNonembedding.Incidence": 27,
+      "Statements": 19,
+      "DomainNonembedding.ShearNonembedding": 19,
+      "DomainNonembedding.MatrixAmplification": 10,
+      "DomainNonembedding.DivisionRingRank": 6,
+      "DomainNonembedding.RegularRepresentation": 1,
+      "FiniteLean.GroupTheory.OAI.GroupTheory.Hyperbolic.Model": 4,
+      "DomainNonembedding.RankCertificate": 13
+    }
+  },
+  "resource_policy": {
+    "accepted_guarded_Lean_starts": 253,
+    "guard_denials_no_compiler_started": [
+      {
+        "epoch": 1794614235.5367122,
+        "host": {
+          "c_free_bytes": 207194083328,
+          "lean_pids": [],
+          "epoch": 1794614235.142,
+          "lake_pids": [],
+          "available_bytes": 8489603072
+        },
+        "wsl_available_bytes": 15615586304,
+        "foreign_lean": [],
+        "foreign_lake": [],
+        "args": [
+          "-j1",
+          "-M5000",
+          "/opt/domain-nonembedding-clean-2026-11-13/DomainNonembedding/ShearNonembedding.lean",
+          "-o",
+          "/opt/domain-nonembedding-clean-2026-11-13/.lake/build/lib/lean/DomainNonembedding/ShearNonembedding.olean",
+          "-i",
+          "/opt/domain-nonembedding-clean-2026-11-13/.lake/build/lib/lean/DomainNonembedding/ShearNonembedding.ilean",
+          "-c",
+          "/opt/domain-nonembedding-clean-2026-11-13/.lake/build/ir/DomainNonembedding/ShearNonembedding.c",
+          "--setup",
+          "/opt/domain-nonembedding-clean-2026-11-13/.lake/build/ir/DomainNonembedding/ShearNonembedding.setup.json",
+          "--json"
+        ],
+        "permitted": false
+      }
+    ],
+    "serial_lock_and_no_foreign_process_at_every_start": true,
+    "Lean_limit_MiB": 5000,
+    "raised_Lean_caps": [],
+    "minimum_Windows_available_bytes": 8715931648,
+    "minimum_WSL_available_bytes": 15459934208,
+    "minimum_C_free_bytes": 207204483072,
+    "interrupted_owned_build_runs": 3,
+    "limits_preserved": true
+  },
+  "all_tracked_Lean_source_census": {
+    "files": 93,
+    "development_admissions": 0,
+    "intentional_template_holes": {
+      "Challenge.lean": 3
+    },
+    "forbidden_mechanisms": []
+  },
+  "release_lint": "PASS",
+  "final_process_check": "PASS: no Lean/Lake in running WSL distributions or Windows",
+  "reports_complete": [
+    "REPORT.md",
+    "SCOPE.md",
+    "README.md",
+    "HANDOFF.md",
+    "STATUS.md",
+    "RELEASE-READINESS.md",
+    "AXIOMS.txt"
+  ]
+}

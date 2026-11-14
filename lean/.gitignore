@@ -1,0 +1,10 @@
+.lake/
+*.olean
+*.ilean
+*.c
+*.o
+work/
+.build-control/
+
+evidence/*.log
+evidence/*.jsonl

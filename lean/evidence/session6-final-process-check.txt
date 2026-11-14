@@ -1,0 +1,2 @@
+lean-comparator: no Lean/Lake
+Machine-wide Lean slot clear; guarded resource check follows.

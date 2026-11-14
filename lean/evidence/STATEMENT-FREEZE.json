@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-13",
+  "verdict": "FAITHFUL",
+  "checkpoint": "274e21f",
+  "verdict_file": "C:/Infanox/qb-relay-2026-10-22/codesk-blind-fidelity-domain-2026-11-13/STATEMENT-READ.md",
+  "freeze_record": "C:/Infanox/qb-relay-2026-10-22/codesk-lean-domain-nonembedding-2026-11-13/STATEMENT-FREEZE-2026-11-13.md",
+  "files": [
+    {
+      "path": "Statements.lean",
+      "sha256": "6adb66e9cdeba2aa95dfd6cb94094f6fe29d21f586c15a92b83f81afa34d405f"
+    },
+    {
+      "path": "DomainNonembedding/PaperData.lean",
+      "sha256": "9583704b310dc6acae79e81aba4f6f527a135d0d4a4528413561112977522958"
+    },
+    {
+      "path": "DomainNonembedding/Hypotheses.lean",
+      "sha256": "875b087749ef0828b70c49badf81e7b8e57c3dc004a34c72bfae611c185125cb"
+    }
+  ],
+  "rule": "No statement changes; only the recorded final theorem-to-def release header change is allowed."
+}

@@ -1,0 +1,1 @@
+PASS: byte-identical proof closure; session-6 leanchecker, nanoda, and negative-control receipts carry over.

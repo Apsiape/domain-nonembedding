@@ -1,0 +1,7 @@
+cache-get exit=0
+build exit=0
+audit exit=0
+solution exit=0
+solution-audit exit=0
+source-audit exit=0
+comparator exit=1

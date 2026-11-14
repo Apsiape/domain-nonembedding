@@ -1,0 +1,9 @@
+{
+  "Statements.lean": "6adb66e9cdeba2aa95dfd6cb94094f6fe29d21f586c15a92b83f81afa34d405f",
+  "DomainNonembedding/PaperData.lean": "9583704b310dc6acae79e81aba4f6f527a135d0d4a4528413561112977522958",
+  "DomainNonembedding/Permutation.lean": "32887d3830e15e6c3fe3a6298cfd4d78f3e0bfe5d1a046784d4345ab3c61b38c",
+  "DomainNonembedding/PermutationAverage.lean": "eed994b8a0096a85bdefc75b6f374d4223fdf48e99803cd974581b7d730185ac",
+  "DomainNonembedding/DivisionRingRank.lean": "4882a719951791253f07e90c5e149c46a3dfd3550a92ddf3c6c6a90146f60ac2",
+  "DomainNonembedding/FiniteFieldData.lean": "8cf1c4e6e903b9729cce4aaa3f994dd32c77d5a5c8d614d24f4e66fec5673e1e",
+  "DomainNonembedding/Hypotheses.lean": "875b087749ef0828b70c49badf81e7b8e57c3dc004a34c72bfae611c185125cb"
+}

@@ -1,0 +1,2 @@
+comparator exit=0
+ALL-GATES-FINISHED

@@ -1,0 +1,1 @@
+PASS: no new filesystem-root entries after the first sandboxed comparator attempt (exit 1).

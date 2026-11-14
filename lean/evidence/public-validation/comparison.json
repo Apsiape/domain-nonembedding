@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "full_audit_declarations": 2792,
+  "solution_audit_declarations": 3,
+  "declarations_identical_to_session6": true,
+  "axiom_lines_identical_to_session6": true,
+  "complete_audit_output_identical": true,
+  "complete_solution_audit_output_identical": true,
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "development_sorry_count": 0,
+  "challenge_intentional_holes": 3,
+  "compiled_sorry_warnings": 0,
+  "challenge_verbatim_except_imports": true,
+  "challenge_imports_only_mathlib": true,
+  "reuse_files_verified": 79,
+  "clean_input_files": 210,
+  "source_tree_and_manifest_unchanged": true,
+  "export_sha256": "4a5a95d170a5aa6314f1f74635e827275a0ca52cda7ba497e8ea8ae6d366681b",
+  "kernel_replays_carry_over": true,
+  "sandbox_network_disabled": true,
+  "root_inventory_unchanged_after_sandbox": true
+}

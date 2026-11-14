@@ -1,0 +1,9 @@
+Checking /toolchain/bin: empty; rmdir exit=0
+Checking /toolchain: empty; rmdir exit=0
+Checking /lake-cache: empty; rmdir exit=0
+Checking /mathlib-cache: empty; rmdir exit=0
+Checking /xdg-cache: empty; rmdir exit=0
+Checking /gitconfig: 0 bytes; unlink exit=0
+Checking /compile.lock: 0 bytes; unlink exit=0
+Checking /compile-gates.txt: 0 bytes; unlink exit=0
+All explicitly authorized empty paths removed. No recursive deletion used.

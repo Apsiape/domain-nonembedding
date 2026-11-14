@@ -1,0 +1,21 @@
+Resolving dependencies
+Building Challenge
+ℹ [1/1] Ran DomainNonembedding/Challenge
+info: stdout:
+Challenge.lean:226:8: warning: declaration uses `sorry`
+Challenge.lean:230:8: warning: declaration uses `sorry`
+Challenge.lean:236:8: warning: declaration uses `sorry`
+Build completed successfully (1 job).
+PANIC at Option.get! Init.Data.Option.BasicAux:22:14: value is none
+backtrace:
+/opt/domain-public-2026-11-13/control/toolchain/bin/../lib/lean/libleanshared.so(+0x9621e05) [0x7faf4138ae05]
+/opt/domain-public-2026-11-13/control/toolchain/bin/../lib/lean/libleanshared.so(+0x9618987) [0x7faf41381987]
+/opt/domain-public-2026-11-13/control/toolchain/bin/../lib/lean/libleanshared.so(lean_panic_fn_borrowed+0x2b) [0x7faf41381a6b]
+/opt/domain-public-2026-11-13/control/toolchain/bin/leanexport(Array.mapMUnsafe.map [private] spec at main+0x145) [0x555eda67b3a5]
+/opt/domain-public-2026-11-13/control/toolchain/bin/leanexport([lean] main+0x202) [0x555eda67b752]
+/opt/domain-public-2026-11-13/control/toolchain/bin/../lib/lean/libleanshared.so(+0x9616367) [0x7faf4137f367]
+/opt/domain-public-2026-11-13/control/toolchain/bin/../lib/lean/libleanshared.so(+0x96169da) [0x7faf4137f9da]
+/lib/x86_64-linux-gnu/libc.so.6(+0x9cb64) [0x7faf37bedb64]
+/lib/x86_64-linux-gnu/libc.so.6(+0x129e8c) [0x7faf37c7ae8c]
+error: Child exited with 134
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, DomainNonembedding.Release.paperData_exists, DomainNonembedding.Release.nonembedding_data, DomainNonembedding.Release.shear_nonembedding_data, propext, Classical.choice, Quot.sound, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenge

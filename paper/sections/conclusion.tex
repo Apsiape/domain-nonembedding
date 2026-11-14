@@ -167,6 +167,12 @@ It does not settle the orderability of the base or Mal'cev's problem;
 the retractive example retains the precise reduction of its
 left-orderability to that of \(G_p\).
 
+\paragraph{Changes in version 1.1.0.}
+This version adds the Lean verification of the nonembedding clauses of
+Theorems~\ref{thm:main} and~\ref{thm:shear}, with an appendix describing
+its scope and checks. The mathematical statements and their proofs in
+the text are unchanged.
+
 \section*{How this work was done}
 
 The authors directed the research. The
@@ -183,7 +189,21 @@ supplied the concentration proof. Claude Opus~5.5 then checked the
 hyperbolic construction refutation-first, re-deriving each load-bearing
 step before reading either run's argument; its repairs, including the
 full write-up of the puncture-lemma proof and the combination-theorem
-citation, are incorporated here. The authors take responsibility for
+citation, are incorporated here.
+
+The Lean development was written by GPT-6.1 Sol agents in Codesk
+sessions, directed by the authors. An independent blind fidelity read
+found the statements faithful to the paper; they were then frozen,
+before the proofs were written. The recorded package passed the default
+build, the full axiom audit, a sandboxed comparator against a
+Mathlib-only challenge, and proof-closure replay by \texttt{leanchecker}
+and \texttt{nanoda}, with a negative control omitting
+\texttt{Classical.choice}. Release lint and a fresh-clone cache retrieval,
+build and audit also passed, and the shipped folder passed them again
+from a clean copy. Appendix~\ref{app:lean} gives the scope, pins and
+check results.
+
+The authors take responsibility for
 the statements and proofs. The proofs are given in full; the internal
 checks are not a substitute for them.
 

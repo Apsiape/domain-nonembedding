@@ -1,0 +1,10 @@
+DomainNonembedding.Release.paperData_exists (p : ℕ) [Fact (Nat.Prime p)] : ∃ d, d.Admissible
+DomainNonembedding.Release.nonembedding_data.{u_1, u_2} {p : ℕ} [Fact (Nat.Prime p)]
+  (d : DomainNonembedding.PaperData p) (hd : d.Admissible) (K : Type u_1) [Field K] [CharP K p] {D : Type u_2}
+  [DivisionRing D] (φ : MonoidAlgebra K d.Gamma →+* D) : ¬Function.Injective ⇑φ
+DomainNonembedding.Release.shear_nonembedding_data.{u_1, u_2} {p : ℕ} [Fact (Nat.Prime p)]
+  (d : DomainNonembedding.PaperData p) (hd : d.Admissible) (K : Type u_1) [Field K] [CharP K p] {D : Type u_2}
+  [DivisionRing D] (φ : MonoidAlgebra K d.Shear →+* D) : ¬Function.Injective ⇑φ
+'DomainNonembedding.Release.paperData_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DomainNonembedding.Release.nonembedding_data' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DomainNonembedding.Release.shear_nonembedding_data' depends on axioms: [propext, Classical.choice, Quot.sound]

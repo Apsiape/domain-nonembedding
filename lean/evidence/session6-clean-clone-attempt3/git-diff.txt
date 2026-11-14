@@ -1,0 +1,8 @@
+warning: in the working copy of 'deps/nonsofic/lean-toolchain', CRLF will be replaced by LF the next time Git touches it
+diff --git a/deps/nonsofic/lean-toolchain b/deps/nonsofic/lean-toolchain
+index 2aa2c7b..a6aff06 100644
+--- a/deps/nonsofic/lean-toolchain
++++ b/deps/nonsofic/lean-toolchain
+@@ -1 +1 @@
+-leanprover/lean4:v4.35.0
++leanprover/lean4:v4.35.0

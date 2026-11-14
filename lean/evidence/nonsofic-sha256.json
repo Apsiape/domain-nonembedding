@@ -1,0 +1,400 @@
+{
+  "source": "C:\\Infanox\\nonsofic-hyperbolic-group\\lean",
+  "files": [
+    {
+      "path": "Approx252/Check.lean",
+      "sha256": "435b274a2855862972bda77ec38de71777e47cdc8f2e229c2868988e6812fdf1",
+      "bytes": 882
+    },
+    {
+      "path": "Approx252/NonSofic.lean",
+      "sha256": "7e4ee8f1c8786dbcd37b50e45f1113c4df33bf060771960da2b4213a7cfea9fc",
+      "bytes": 10215
+    },
+    {
+      "path": "Approx252.lean",
+      "sha256": "3a5e598bdc46bc8bbb024b373dc3e781ddbcad4d33901c425b2f9d2aa80ba99e",
+      "bytes": 182
+    },
+    {
+      "path": "Audit.lean",
+      "sha256": "f9f9964d5c988e2fe3c187a7df7c4f5ae2b76d1b2d334f8dc90f5fb458a6258f",
+      "bytes": 18997
+    },
+    {
+      "path": "AXIOMS.txt",
+      "sha256": "071bff69dcfad235cc03037227190d48d9311f4e29f9f046825796ae677610d4",
+      "bytes": 3038
+    },
+    {
+      "path": "evidence/KERNEL-REPLAY.json",
+      "sha256": "afb54b462f47588587039f5aeaad810c5b0fb32c18e27544a6b38b3b8823a469",
+      "bytes": 30719
+    },
+    {
+      "path": "evidence/replay.sh",
+      "sha256": "0fa311ce61aa2cb3e25f94b12228474e39f331bcd2c9949cc063532bd98ff08e",
+      "bytes": 533
+    },
+    {
+      "path": "lake-manifest.json",
+      "sha256": "977324b62973245fb98d098ca6ee1390c8d4d2e161dbeb048f4d01521a9d17c0",
+      "bytes": 3253
+    },
+    {
+      "path": "lakefile.lean",
+      "sha256": "203a98f04c7a8a543c4173e57ecd74f413d8c8760584fdebe87ba2f26a374382",
+      "bytes": 532
+    },
+    {
+      "path": "lean-toolchain",
+      "sha256": "27e73059e3a4d568450f74e39c2f79676c4f8d41373fff15170690f124e3bacd",
+      "bytes": 26
+    },
+    {
+      "path": "LIBRARY-MODULES.txt",
+      "sha256": "1b203de08645d6fd58cb3f8dc4bbb5b86867f5f94ebb7bcd788a88b7c37511d8",
+      "bytes": 2315
+    },
+    {
+      "path": "LICENSE-APACHE-2.0.txt",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "bytes": 11357
+    },
+    {
+      "path": "LICENSE-CC-BY-4.0.txt",
+      "sha256": "9e5f1b3c610b9c2da5c313bf81d577a7d1acec686bdb0384edefa6df0f90cd94",
+      "bytes": 18656
+    },
+    {
+      "path": "LICENSE-MIT.txt",
+      "sha256": "5acccb1b89219500cc414b42d48b4f27edc0116242d4d33d768708a503bd9c95",
+      "bytes": 1088
+    },
+    {
+      "path": "NonSofic/Collapse.lean",
+      "sha256": "924082c6988b1d255cf5771c96926b38b2adc7ca6c73594fe7dfe33d3e90ca23",
+      "bytes": 4453
+    },
+    {
+      "path": "NonSofic/DataBounds.lean",
+      "sha256": "b1bd01d1309386fdb65bee199e23cec36a01adcb22339ef5c4aee1c95dbeb2b7",
+      "bytes": 1333
+    },
+    {
+      "path": "NonSofic/Headline.lean",
+      "sha256": "cbd7f02317aa3787baf87b558cceed8f8d05b740afcbc7e0fbf0fbc5a78719f1",
+      "bytes": 3022
+    },
+    {
+      "path": "NonSofic/Lemma22Data.lean",
+      "sha256": "06f9a063bfd2641bf59f366f45cb505d9b3f6f03aa60c0d6bc26040f53964c15",
+      "bytes": 9630
+    },
+    {
+      "path": "NonSofic/Lemma22Quant.lean",
+      "sha256": "d434553733ffda513e0c58db4f2262e29506e9e2f291c5d7aebf5eebc16460cd",
+      "bytes": 1793
+    },
+    {
+      "path": "NonSofic/LineFree.lean",
+      "sha256": "ee96d982ea76eb1aba8419c11f27595bf12bc6f46190d601ffa0ea5f1069c0b1",
+      "bytes": 12013
+    },
+    {
+      "path": "NonSofic/LineFreeWord.lean",
+      "sha256": "6331eda2866a9539cfffecd3d1e0de4857693032cd1e084da95b7b9423958b46",
+      "bytes": 8916
+    },
+    {
+      "path": "NonSofic/Linnell.lean",
+      "sha256": "bfb62c1101bd81e1b313c6331f5207d098938c02ad69bf5feebd5c3c11de65e0",
+      "bytes": 2810
+    },
+    {
+      "path": "NonSofic/Residual.lean",
+      "sha256": "49b936d8aae230d7c75f513b57c24030fd01d792e92f1ccd27142bf782dda7b7",
+      "bytes": 15172
+    },
+    {
+      "path": "NonSofic/SharpConstants.lean",
+      "sha256": "8b4353f6ee2ba651d0b3823013e044e4881ea3e1951a24eccb2bb5cf50d72c9c",
+      "bytes": 15218
+    },
+    {
+      "path": "NonSofic/SharpCount.lean",
+      "sha256": "9d33ac2a0c91ada47cd69cfd53c8842427ba1716b2a9a0e342b58c30e9f5c15f",
+      "bytes": 5203
+    },
+    {
+      "path": "NonSofic/SharpQuant.lean",
+      "sha256": "fa09eeafa8f6a770c6c3b21f5a5175ece4fc27f21491d6ca2024d0b3956d9ff4",
+      "bytes": 7104
+    },
+    {
+      "path": "NonSofic.lean",
+      "sha256": "97c711fc14bca95d9292c2a7addd1127ac10ed6494f6b9540444363b60d5c4aa",
+      "bytes": 923
+    },
+    {
+      "path": "NOTICE",
+      "sha256": "087f8bf360d1483268425c34d3110c415a890ec98b5a352f8bdf596949c6f76f",
+      "bytes": 1077
+    },
+    {
+      "path": "Proofs.lean",
+      "sha256": "f1a669525dcf5133a4de8f8a8304675315aa74d6661495d81dc0232ff3b10f30",
+      "bytes": 2356
+    },
+    {
+      "path": "README.md",
+      "sha256": "86b3a4218f9e2b54900894dab1adddac62c53a7c00c374ce1385d3f5fce27ade",
+      "bytes": 7492
+    },
+    {
+      "path": "RIGHTS.md",
+      "sha256": "89f4641415937b432b4ff9fcfd221faac07ba3afec20974a8ba33e012c1b0871",
+      "bytes": 883
+    },
+    {
+      "path": "SHA256SUMS",
+      "sha256": "1dacc674008acdb37c239cb124d1d165c9a383417edecef3617accdc66ad0137",
+      "bytes": 9266
+    },
+    {
+      "path": "Statements.lean",
+      "sha256": "5eae3930362234f207d984ce59e7168555442310c63215c559cf934245fc6555",
+      "bytes": 185132
+    },
+    {
+      "path": "UPSTREAM-PINS.json",
+      "sha256": "9b03f4e65dc21a8dca5e6e830b2276d6703363e024a9cc8d6b93a91176b0e3b0",
+      "bytes": 527
+    },
+    {
+      "path": "vendor/finite-lean/FiniteLean/GroupTheory/DivisionRing/Adapter.lean",
+      "sha256": "0b2151340710ba0244d6e8d99396c663cb7343d1b57dee103b9c0f45a393856a",
+      "bytes": 1555
+    },
+    {
+      "path": "vendor/finite-lean/FiniteLean/GroupTheory/DivisionRing/Assembly.lean",
+      "sha256": "6c5e3bc9cd819013a2b725b556fbe2dc2d04f967378cced3f207b255efcb6454",
+      "bytes": 7925
+    },
+    {
+      "path": "vendor/finite-lean/FiniteLean/GroupTheory/DivisionRing/Freeness.lean",
+      "sha256": "ebcf65f4cba24e850eb620d85d6620c8253540395a7695564d97169c12c9d1f5",
+      "bytes": 17510
+    },
+    {
+      "path": "vendor/finite-lean/FiniteLean/GroupTheory/DivisionRing/FullRank.lean",
+      "sha256": "7d51d9da612743797953b5e31d80c56f1cc5abba3a73bb36220453f84646e399",
+      "bytes": 13265
+    },
+    {
+      "path": "vendor/finite-lean/FiniteLean/GroupTheory/DivisionRing/LineData.lean",
+      "sha256": "2a2f9101b6eee28bdc32010c9c96ba7b4f18149e06f48402cdab735824287c8c",
+      "bytes": 6301
+    },
+    {
+      "path": "vendor/finite-lean/FiniteLean/GroupTheory/DivisionRing/RankD.lean",
+      "sha256": "ae0324725b5f3f96f1919ecff65d920eda01d946f9ac3e8ebcedde66e628f01c",
+      "bytes": 15524
+    },
+    {
+      "path": "vendor/finite-lean/FiniteLean/GroupTheory/DivisionRing/Sanity.lean",
+      "sha256": "194d714640fe9cd6fcc684abf8da5867614f7c2d9cef4ac2281711d834a9dff2",
+      "bytes": 3271
+    },
+    {
+      "path": "vendor/finite-lean/FiniteLean/GroupTheory/DivisionRing/SplitLinnell.lean",
+      "sha256": "a30b9a47523fe3f7db95e34bdf4cf5bf5830c7a2a501ff9fbed1f5d33fe2a43e",
+      "bytes": 17312
+    },
+    {
+      "path": "vendor/finite-lean/FiniteLean/GroupTheory/DivisionRing/Sylvester.lean",
+      "sha256": "810d8afc4c15ef0fcb62bd5174148a2ca40547d8e1cf163666c33ddaabfa04df",
+      "bytes": 26141
+    },
+    {
+      "path": "vendor/finite-lean/FiniteLean/GroupTheory/OAI/GroupTheory/Hyperbolic/BasedWords.lean",
+      "sha256": "4ec40cf584c23599283e915abb49f0b2275e298b1f7497eec1ac88aed7d83633",
+      "bytes": 15604
+    },
+    {
+      "path": "vendor/finite-lean/FiniteLean/GroupTheory/OAI/GroupTheory/Hyperbolic/CayleyMetric.lean",
+      "sha256": "78d7002dbeca07b715087d444c169873d7a362f3d868220b7fdcc4c6d3bdcafe",
+      "bytes": 5580
+    },
+    {
+      "path": "vendor/finite-lean/FiniteLean/GroupTheory/OAI/GroupTheory/Hyperbolic/CayleyPaths.lean",
+      "sha256": "f708e0d9068e7a21bcd3a3557a65c8d4b47a9dc6147c70b25157f905a10860b6",
+      "bytes": 5415
+    },
+    {
+      "path": "vendor/finite-lean/FiniteLean/GroupTheory/OAI/GroupTheory/Hyperbolic/Chains.lean",
+      "sha256": "6e83110a9851f65602c4b724679a23ca8f2839d71d769160d8b65306e18f0307",
+      "bytes": 13442
+    },
+    {
+      "path": "vendor/finite-lean/FiniteLean/GroupTheory/OAI/GroupTheory/Hyperbolic/CyclicAction.lean",
+      "sha256": "1b357669eb8b33b55c75f77e27ffe416f5c75cfc5572a663a9a515fc7fab82f0",
+      "bytes": 9630
+    },
+    {
+      "path": "vendor/finite-lean/FiniteLean/GroupTheory/OAI/GroupTheory/Hyperbolic/Dipoles.lean",
+      "sha256": "e4cacb176aecaf5dbc8739e15e12c84b07431c772b4ede051cc83bdfdd398353",
+      "bytes": 14562
+    },
+    {
+      "path": "vendor/finite-lean/FiniteLean/GroupTheory/OAI/GroupTheory/Hyperbolic/DiscreteMetric.lean",
+      "sha256": "f0a67e00a010ce69c05834694127ed509e0358717bd3885cfa1eb72ac2705a30",
+      "bytes": 19131
+    },
+    {
+      "path": "vendor/finite-lean/FiniteLean/GroupTheory/OAI/GroupTheory/Hyperbolic/FullChains.lean",
+      "sha256": "df58e4d9f2dfcf8b01251d18f2e161f4200d8e4c9215d0f39cc9797c982e56e8",
+      "bytes": 8676
+    },
+    {
+      "path": "vendor/finite-lean/FiniteLean/GroupTheory/OAI/GroupTheory/Hyperbolic/FullFilling.lean",
+      "sha256": "bd58e7453ec558b5d2583f1a784eb336df3d523ed640e20d96c824663771f974",
+      "bytes": 14090
+    },
+    {
+      "path": "vendor/finite-lean/FiniteLean/GroupTheory/OAI/GroupTheory/Hyperbolic/FullGluing.lean",
+      "sha256": "03c6f71d3d97477a8d66aa89df39d61070af5ae5b7a6c81017ffdc60c03e13d6",
+      "bytes": 17026
+    },
+    {
+      "path": "vendor/finite-lean/FiniteLean/GroupTheory/OAI/GroupTheory/Hyperbolic/Hyperbolicity.lean",
+      "sha256": "e3b92b9e0e03ec82a5232b61c318939b6fd5f38d241805343b92ffae576e6067",
+      "bytes": 2383
+    },
+    {
+      "path": "vendor/finite-lean/FiniteLean/GroupTheory/OAI/GroupTheory/Hyperbolic/Incidence.lean",
+      "sha256": "e18ecd67258834d3498b9cbc48881ba7fa8e5311ce62ebea9a4a88cfdbe98a90",
+      "bytes": 46486
+    },
+    {
+      "path": "vendor/finite-lean/FiniteLean/GroupTheory/OAI/GroupTheory/Hyperbolic/LiftedFilling.lean",
+      "sha256": "38885e15707468a341d145157f2efa3449b7beebe136e32b425ed3a4f4600772",
+      "bytes": 15468
+    },
+    {
+      "path": "vendor/finite-lean/FiniteLean/GroupTheory/OAI/GroupTheory/Hyperbolic/Links.lean",
+      "sha256": "5eec758307ef11670d088b6a48b86d4090b778e3435e86353f49f2a5a828a6ec",
+      "bytes": 9805
+    },
+    {
+      "path": "vendor/finite-lean/FiniteLean/GroupTheory/OAI/GroupTheory/Hyperbolic/Main.lean",
+      "sha256": "02dbba5532e963c5b14cd43093c73393861de0671a88726ad0bd0f08d0cd3fcd",
+      "bytes": 633
+    },
+    {
+      "path": "vendor/finite-lean/FiniteLean/GroupTheory/OAI/GroupTheory/Hyperbolic/MatrixRank.lean",
+      "sha256": "58b980085331267788c01166ba017a94ee30364879f5e733ff4e1bfb44532e86",
+      "bytes": 46203
+    },
+    {
+      "path": "vendor/finite-lean/FiniteLean/GroupTheory/OAI/GroupTheory/Hyperbolic/Model.lean",
+      "sha256": "c201e9ee835eec80a5e1816913703c64dca17b6668be43012481d30a813e3394",
+      "bytes": 8900
+    },
+    {
+      "path": "vendor/finite-lean/FiniteLean/GroupTheory/OAI/GroupTheory/Hyperbolic/PermutationCycles.lean",
+      "sha256": "3332eaca0bd12de8396fba1d5f3210be92efb0d76f61499f88a84340d7d7de65",
+      "bytes": 23039
+    },
+    {
+      "path": "vendor/finite-lean/FiniteLean/GroupTheory/OAI/GroupTheory/Hyperbolic/Planarity.lean",
+      "sha256": "98dedc83308a5fdfc4d579e3ac7f18a064baaae012891f497a0045d34daa851a",
+      "bytes": 22848
+    },
+    {
+      "path": "vendor/finite-lean/FiniteLean/GroupTheory/OAI/GroupTheory/Hyperbolic/Presentation.lean",
+      "sha256": "d2c3cd3ec1efdd89989301b1351f792781949715cfeaa1948a72aa3840e01501",
+      "bytes": 23900
+    },
+    {
+      "path": "vendor/finite-lean/FiniteLean/GroupTheory/OAI/GroupTheory/Hyperbolic/Rectangles.lean",
+      "sha256": "0717110b071487513177cbeaf1572b4282718f0b6f0fe7d1e57022517fc05fcb",
+      "bytes": 8483
+    },
+    {
+      "path": "vendor/finite-lean/FiniteLean/GroupTheory/OAI/GroupTheory/Hyperbolic/RePairing.lean",
+      "sha256": "73895c533cb8075be4be052d5788ba87ef937846981e06635893507314608f14",
+      "bytes": 23562
+    },
+    {
+      "path": "vendor/finite-lean/FiniteLean/GroupTheory/OAI/GroupTheory/Hyperbolic/Ribbons.lean",
+      "sha256": "bbbea73940fecd31ad22277897fd062f8bf4093e749540ec94fecd10730df59c",
+      "bytes": 31192
+    },
+    {
+      "path": "vendor/finite-lean/FiniteLean/GroupTheory/OAI/GroupTheory/Hyperbolic/Spheres.lean",
+      "sha256": "9a8ca5353266670e45ee0eedc351d6340573ef66192d328ffef772a040e48df1",
+      "bytes": 21574
+    },
+    {
+      "path": "vendor/finite-lean/FiniteLean/GroupTheory/OAI/GroupTheory/Hyperbolic/ThinTriangles.lean",
+      "sha256": "1c398cd29b709b007ebaf0eca7558365976f8c98ee06cefe0905964a7659925a",
+      "bytes": 16066
+    },
+    {
+      "path": "vendor/finite-lean/FiniteLean/GroupTheory/OAI/GroupTheory/Hyperbolic/Torsion.lean",
+      "sha256": "414edef38e1977aa99746dc5c8459f5ffdb8369dd1e80ae45225b881e121e00d",
+      "bytes": 2402
+    },
+    {
+      "path": "vendor/finite-lean/FiniteLean/GroupTheory/OAI/GroupTheory/Hyperbolic/TriangleFilling.lean",
+      "sha256": "063b570f08fce6cb00c7600c028767c172148b6d2a3333e98cdabe59197e1125",
+      "bytes": 30714
+    },
+    {
+      "path": "vendor/finite-lean/FiniteLean/GroupTheory/OAI/GroupTheory/Hyperbolic/WordPaths.lean",
+      "sha256": "c78edbe8fb11bed5a224fa3a3ca7adf11eba1a4ee3af0c961cdf1158136a1336",
+      "bytes": 14586
+    },
+    {
+      "path": "vendor/finite-lean/FiniteLean/GroupTheory/OAI/GroupTheory/Hyperbolic/Words.lean",
+      "sha256": "8462b7edbf48e507d79496f03da8c8e347989e237edd376c482568e73447ca14",
+      "bytes": 19094
+    },
+    {
+      "path": "vendor/finite-lean/FiniteLean/GroupTheory/OAI/LICENSE-openai-math",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "bytes": 11357
+    },
+    {
+      "path": "vendor/finite-lean/FiniteLean/GroupTheory/OAI/VENDOR.md",
+      "sha256": "c56e8129f1d20c08773528c76e5041089020e55872e964c518cd192fd0e738c9",
+      "bytes": 1787
+    },
+    {
+      "path": "vendor/finite-lean/FiniteLean/GroupTheory/RankCertificate.lean",
+      "sha256": "cadc9ba1303e3b1a2d5b6fb02e09743b8060c64fa03a70b5e1d8cad8cb9860d6",
+      "bytes": 10640
+    },
+    {
+      "path": "vendor/finite-lean/FiniteLean/GroupTheory/Sofic/Basic.lean",
+      "sha256": "2c2160f3a5f074f99507a28168b02501e72d1f8f77c9a8dd475ac8c295799472",
+      "bytes": 11188
+    },
+    {
+      "path": "vendor/finite-lean/FiniteLean/GroupTheory/Sofic/Closure.lean",
+      "sha256": "6759f1af1a21096cbc492adde000220573c7e5ed9d2a87a30ec10ef14889f72b",
+      "bytes": 10981
+    },
+    {
+      "path": "vendor/finite-lean/FiniteLean/GroupTheory/Sofic/PermModel.lean",
+      "sha256": "a8387c5a99f4b2cc667972c3e0e5a90d79c09a548fc6b6c591955c9ae3101070",
+      "bytes": 30921
+    },
+    {
+      "path": "vendor/finite-lean/README.md",
+      "sha256": "1d2cf9e9fcc10700d44709052936cce11a24b8e987dda801f56ea8296e8fbd41",
+      "bytes": 1520
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+* text=auto
+*.lean text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.py text eol=lf
+*.sh text eol=lf
+deps/nonsofic/** -text
+
+*.lean.txt text eol=lf
+lean-toolchain text eol=lf
+
+# Preserve all original reused bytes, including its CRLF toolchain pin.
+deps/nonsofic/** -text
+
+# This release is a raw-byte snapshot; preserve file hashes on every platform.
+* -text

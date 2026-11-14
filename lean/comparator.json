@@ -1,0 +1,14 @@
+{
+  "challenge_module": "Challenge",
+  "solution_module": "Solution",
+  "theorem_names": [
+    "DomainNonembedding.Release.paperData_exists",
+    "DomainNonembedding.Release.nonembedding_data",
+    "DomainNonembedding.Release.shear_nonembedding_data"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ]
+}

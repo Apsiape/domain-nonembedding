@@ -1,0 +1,29 @@
+{
+  "workspace": "/opt/domain-nonembedding-clean-2026-11-13",
+  "network_scope": "GitHub pinned dependencies and Mathlib cache only",
+  "fresh_workspace": true,
+  "preexisting_build_artifacts": false,
+  "checks": [
+    {
+      "label": "clone",
+      "command": [
+        "git",
+        "-c",
+        "safe.directory=/mnt/c/Infanox/domain-nonembedding-lean",
+        "clone",
+        "--no-hardlinks",
+        "/mnt/c/Infanox/domain-nonembedding-lean",
+        "/opt/domain-nonembedding-clean-2026-11-13"
+      ],
+      "exit_code": 128,
+      "started_epoch": 1794612585.4429317,
+      "finished_epoch": 1794612585.4534235
+    }
+  ],
+  "status": "FAIL",
+  "error": "clone failed",
+  "workspace_deleted": true,
+  "log_sha256": {
+    "clone.txt": "5d6186249c217a7078074dda71719c61712c60ff89b3f43e5d3df71d5384067b"
+  }
+}

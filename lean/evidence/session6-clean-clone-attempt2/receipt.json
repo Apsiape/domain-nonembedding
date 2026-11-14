@@ -1,0 +1,107 @@
+{
+  "workspace": "/opt/domain-nonembedding-clean-2026-11-13",
+  "network_scope": "GitHub pinned dependencies and Mathlib cache only",
+  "fresh_workspace": true,
+  "preexisting_build_artifacts": false,
+  "checks": [
+    {
+      "label": "clone",
+      "command": [
+        "git",
+        "clone",
+        "--no-hardlinks",
+        "/opt/domain-nonembedding-lean/project/work/clean-clone.bundle",
+        "/opt/domain-nonembedding-clean-2026-11-13"
+      ],
+      "exit_code": 0,
+      "started_epoch": 1794612627.8954349,
+      "finished_epoch": 1794612627.9875915
+    },
+    {
+      "label": "cache-get",
+      "command": [
+        "lake",
+        "exe",
+        "cache",
+        "get"
+      ],
+      "exit_code": 0,
+      "started_epoch": 1794612627.9901094,
+      "finished_epoch": 1794612713.5267932
+    },
+    {
+      "label": "build",
+      "command": [
+        "lake",
+        "build"
+      ],
+      "exit_code": 0,
+      "started_epoch": 1794612713.5269818,
+      "finished_epoch": 1794613318.1167827
+    },
+    {
+      "label": "audit",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-M5000",
+        "Audit.lean"
+      ],
+      "exit_code": 0,
+      "started_epoch": 1794613318.1168425,
+      "finished_epoch": 1794613399.2159426
+    },
+    {
+      "label": "solution",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-M5000",
+        "Solution.lean"
+      ],
+      "exit_code": 0,
+      "started_epoch": 1794613399.2159965,
+      "finished_epoch": 1794613412.7646806
+    },
+    {
+      "label": "source-audit",
+      "command": [
+        "python3",
+        "-I",
+        "scripts/source-audit.py"
+      ],
+      "exit_code": 0,
+      "started_epoch": 1794613412.764742,
+      "finished_epoch": 1794613412.7988248
+    },
+    {
+      "label": "git-diff",
+      "command": [
+        "git",
+        "diff",
+        "--exit-code"
+      ],
+      "exit_code": 1,
+      "started_epoch": 1794613412.7988753,
+      "finished_epoch": 1794613412.8248591
+    }
+  ],
+  "local_bundle_sha256": "62b3817bd8b6086a3df36336cac44d0cfab6bbcd8c95839ddcd6a2a212c54d69",
+  "tested_commit": "be4bb49d3dd92e0ba0d59e2a22d1285008cf19ae",
+  "status": "FAIL",
+  "error": "git-diff failed",
+  "workspace_deleted": true,
+  "log_sha256": {
+    "cache-get.txt": "53d568e469386fe42fd97af98bf39d19a8168548a01b70e8da0b494de0eb61bb",
+    "git-diff.txt": "f49d51342838b9ca7c8861adf4a8ee2c54f2d864776a94a06c266c1bb948b41b",
+    "solution.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "build.txt": "04bcf7ac9e1206272f7b92cf304232492ca3e1d5888a8cf31d397f45f8431e23",
+    "audit.txt": "d81547448d476f0358580d8f3609817a1a5e86b48975bf2226018ccb28795a9d",
+    "clone.txt": "045c5c84ab21ed432376bf416f0a5cd9fc4eac5127e28802e82e3b02bd3aaa8e",
+    "source-audit.txt": "cd37a9715bda0e9e0f37e3bf136837d2d7498132da7331246e40d3d2df2e7761"
+  }
+}
