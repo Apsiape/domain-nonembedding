@@ -1,2 +1,0 @@
-PASS domain-nonembedding-lean
-   . default lib DomainNonembedding: 2 files, no sorry

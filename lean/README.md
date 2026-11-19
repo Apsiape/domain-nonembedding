@@ -1,4 +1,4 @@
-# Domain nonembedding Lean core — paper version 1.1.0
+# Domain nonembedding Lean core (unchanged since paper version 1.1.0)
 
 This package proves the nonembedding clauses of Theorems A and B of
 *Group algebras that are domains but embed in no division ring* (Mghirbi–Douglas).
@@ -50,32 +50,23 @@ The three comparator targets are data existence plus both all-admissible,
 all-field nonembedding statements. Solution proves these with no named hypotheses.
 `lake comparator --config comparator.json` uses this toolchain's comparator;
 Linux bubblewrap must be available. The checked release sandbox disables networking and supplies no exports.
-Historical machine-specific receipt tools are documented in scripts/README.md;
-they are separate from the portable commands above.
 The comparator and independent replay commands are separate from the default build.
 
-## Scope and evidence
+## Scope and checks
 
 Only the nonembedding half is formalized. Hyperbolicity, diffuseness, concentration,
 the domain property, finite presentability, torsion-freeness, and the shear
-retraction/kernel/orderability claims are outside this core. The imported
+retraction/kernel/orderability claims are outside this core, as are Theorem D and
+its corollary (added in paper version 2.0.0). The imported
 `NonSofic.rankD` is left row rank; the bridge to the paper's right column rank
 is proved as `DivisionRingRank.row_eq_column` / `rowRank_eq_columnRank`.
-See `SCOPE.md`, `REPORT.md`, `AXIOMS.txt`, and `evidence/` for precise coverage and checks.
-The historical freeze remains in `evidence/STATEMENT-FREEZE.json`; the authorized
-release diff, preserved bodies, and new hash are in `evidence/RELEASE-FORM.json`.
+`AXIOMS.txt` records the axioms of every declaration: only `propext`,
+`Classical.choice` and `Quot.sound` occur.
 
-The historical release checks pass: sandboxed comparator, leanchecker, nanoda,
-the missing-choice negative control, full declaration audits, release lint,
-and a fresh clone with cache retrieval, build, census 0, and workspace deletion.
-
-Public packaging preserves all Lean code outside comments and every retained
-receipt byte for byte. See evidence/PUBLIC-PACKAGING.json for old/new SHA-256
-hashes, complete diffs, removals, and the public revalidation record.
-
-The public clean-copy rerun also passes cache retrieval, build (3657 jobs), the
-2792-declaration audit, all three Solution wrappers, the network-disabled
-comparator, source census, and release lint. The 16-root export is byte-identical
-to session 6, so its independent kernel receipts carry over. The declaration
-and axiom records match exactly. The temporary WSL workspace was deleted.
-See REPORT.md and evidence/public-validation/ for the commands and logs.
+For version 1.1.0 the following checks passed: the default build, a full
+declaration and axiom audit, the sandboxed comparator, independent kernel replay
+of the exported proofs by `leanchecker` and `nanoda` with a missing-choice negative
+control, release lint, and a fresh-clone build with cache retrieval. Their full
+records are archived with release v1.1.0 (tag `v1.1.0` and its Zenodo record).
+The Lean code is unchanged since then; version 2.0.0 removes those records and two
+comment references to them from this folder.

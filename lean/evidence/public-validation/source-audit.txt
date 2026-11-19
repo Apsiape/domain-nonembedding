@@ -1,8 +1,0 @@
-{
-  "owned_lean_files": 29,
-  "unfinished_proof_census": {},
-  "total": 0,
-  "reuse_files_verified": 79,
-  "violations": [],
-  "note": "This is a source audit; it does not substitute for Lean type checking."
-}

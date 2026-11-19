@@ -1,6 +1,0 @@
-PASS: no Lean or Lake processes before workspace deletion.
-Verified exact absolute deletion target: /opt/domain-public-2026-11-13 (not a symlink).
-Deleting only that owned tree with find -P -depth -delete; no recursive rm.
-PASS: authorized WSL workspace deleted.
-PASS: filesystem-root inventory still unchanged.
-PASS: no Lean or Lake processes remain.

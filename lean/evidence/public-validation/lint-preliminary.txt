@@ -1,2 +1,0 @@
-PASS lint-preliminary
-   . default lib DomainNonembedding: 2 files, no sorry

@@ -20,7 +20,7 @@ set_option autoImplicit false
 Definitions frozen in November 2026 after an independent blind fidelity read;
 the theorem obligations are stated in Statements.lean and proved in Main.lean.
 Every admissible datum, including the paper's, is covered by the target.
-See BLUEPRINT.md for data choices; DivisionRingRank.lean proves the bridge
+DivisionRingRank.lean proves the bridge
 from reused left row rank to the paper's right column rank.
 -/
 

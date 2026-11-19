@@ -1,3 +1,0 @@
-DomainNonembedding.paperData : (p : ℕ) → [Fact (Nat.Prime p)] → DomainNonembedding.PaperData p
-DomainNonembedding.paperData_admissible : ∀ (p : ℕ) [inst : Fact (Nat.Prime p)],
-  (DomainNonembedding.paperData p).Admissible
